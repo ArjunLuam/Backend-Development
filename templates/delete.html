@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="jumbotron">
+		<h1>Wanna delete a student?</h1>
+		<p>Insert the name of the student that you wanna delete from class</p>
+		<form method="POST">
+			{{form.hidden_tag()}}
+  			{{form.id.label}}{{form.id()}}
+  			{{form.submit()}}
+
+		</form>
+	</div>
+
+	{% endblock %}

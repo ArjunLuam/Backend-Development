@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="jumbotron">
+		<h1>List of all students:</h1>
+		<ul>
+			{% for child in students %}
+			<li>{{child}}</li>
+			{% endfor %}
+			
+		</ul>
+	</div>
+{% endblock %}
